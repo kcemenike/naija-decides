@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Naija Decides — election results from INEC result sheets</title>
+<meta name="description" content="Nigerian election results transcribed from INEC IReV polling unit result sheets, aggregated by ward and local government area, every figure linked to its scan.">
+<style>
+  :root { color-scheme: light dark; --line:#d7dbe0; --muted:#6b7280; --bg:#fff; --card:#f7f8fa; }
+  @media (prefers-color-scheme: dark) {
+    :root { --line:#2c3138; --muted:#9aa3ad; --bg:#12151a; --card:#191d23; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0 auto; padding:32px 24px 64px; max-width:720px; background:var(--bg);
+         font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+  h1 { font-size:26px; margin:0 0 6px; }
+  .sub { color:var(--muted); margin:0 0 28px; }
+  h2 { font-size:15px; text-transform:uppercase; letter-spacing:.05em;
+       color:var(--muted); margin:34px 0 12px; }
+  a.report { display:block; text-decoration:none; color:inherit; background:var(--card);
+             border:1px solid var(--line); border-radius:10px; padding:16px 18px;
+             margin-bottom:10px; }
+  a.report:hover { border-color:#2563eb; }
+  a.report b { display:block; font-size:18px; }
+  a.report span { color:var(--muted); font-size:14px; }
+  p { margin:0 0 14px; }
+  a { color:#2563eb; }
+  .note { color:var(--muted); font-size:14px; }
+  @media (max-width: 600px) { body { padding:22px 16px 48px; } h1 { font-size:22px; } }
+</style>
+</head>
+<body>
+<h1>Naija Decides</h1>
+<p class="sub">Nigerian election results, read off INEC's own polling unit result sheets.</p>
+
+<h2>Reports</h2>
+<a class="report" href="osun/2026/">
+  <b>Osun State governorship — 2026</b>
+  <span>30 local government areas · 3,763 polling units</span>
+</a>
+
+<h2>What these are</h2>
+<p>INEC publishes a scan of the Form EC8A for every polling unit on
+<a href="https://www.inecelectionresults.ng">IReV</a> — the handwritten sheet
+signed at the unit, showing each party's votes and the ballot accounting. It
+publishes the scans, not the numbers, so there is no way to add them up without
+reading several thousand images.</p>
+
+<p>Each report here is the result of doing that: every sheet transcribed,
+checked against its own arithmetic, and aggregated by ward and local government
+area. Every row links back to the scan it came from, so any figure can be
+checked against the paper in one click. Sheets that don't reconcile are not
+silently corrected — they are flagged, reviewed by hand, and the verdict shown
+next to the result.</p>
+
+<p class="note">These are transcriptions of provisional sheets, not certified
+results; INEC's declaration is the official outcome. Not every polling unit has
+an uploaded sheet, and sheets can be replaced for days after polling — each
+report states what it read and when it was generated.
+<a href="https://github.com/kcemenike/naija-decides">Source data and method.</a></p>
+</body>
+</html>
